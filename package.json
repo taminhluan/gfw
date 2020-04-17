@@ -4,14 +4,13 @@
   "devDependencies": {
     "lerna": "^3.20.2"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
+    "bootstrap": "lerna clean -y && lerna bootstrap",
     "start:flagship": "lerna run start --scope @gfw/flagship --stream",
     "start:components": "lerna run start --scope @gfw/components --stream",
     "build:flagship": "lerna run build --scope @gfw/flagship --stream",
     "build:components": "lerna run build --scope @gfw/components --stream",
-    "compile:components": "lerna run compile --scope @gfw/components --stream"
+    "compile:components": "lerna run compile --scope @gfw/components --stream",
+    "dev:components": "lerna run dev --scope @gfw/components --stream"
   }
 }
