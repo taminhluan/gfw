@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/env", "@babel/react"],
+  "plugins": [
+    ["emotion"],
+    [
+      "transform-class-properties",
+      {
+        "spec": true
+      }
+    ]
+  ]
+}

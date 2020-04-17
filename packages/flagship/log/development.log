@@ -32,3 +32,19 @@ puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
 puma (3.12.4) lib/puma/server.rb:476:in `process_client'
 puma (3.12.4) lib/puma/server.rb:334:in `block in run'
 puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+Webpacker::Manifest::MissingEntryError - Webpacker can't find entrypoints in /Users/edbrett/Workspace/gfw/packages/flagship/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+:
+  app/helpers/application_helper.rb:29:in `block in sources_from_pack_manifest_entrypoints'
+  app/helpers/application_helper.rb:28:in `sources_from_pack_manifest_entrypoints'
+  app/helpers/application_helper.rb:15:in `javascript_entrypoint_pack_tag'
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__3609207893942298628_70095689199900'
+
