@@ -8,7 +8,7 @@ import { handlePageTrack } from 'app/analytics';
 
 import Loader from 'components/ui/loader';
 import Meta from 'components/meta';
-import Header from 'components/header';
+import { Header } from '@gfw/components';
 import Footer from 'components/footer';
 import Cookies from 'components/cookies';
 import Button from 'components/ui/button';

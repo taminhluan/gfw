@@ -8,7 +8,6 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna clean -y && lerna bootstrap",
     "start:flagship": "lerna run start --scope @gfw/flagship --stream",
     "start:components": "lerna run start --scope @gfw/components --stream",
     "build:flagship": "lerna run build --scope @gfw/flagship --stream",

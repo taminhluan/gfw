@@ -87,6 +87,7 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.13",
+    "@gfw/components": "^0.5.0",
     "@hot-loader/react-dom": "^16.9.0",
     "@mapbox/mapbox-gl-draw": "^1.1.1",
     "@rails/webpacker": "3.0.1",
