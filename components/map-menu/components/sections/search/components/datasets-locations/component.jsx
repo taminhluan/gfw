@@ -2,9 +2,10 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
+import { Loader } from 'gfw-components';
+
 import Search from 'components/ui/search';
 import NoContent from 'components/ui/no-content';
-import Loader from 'components/ui/loader';
 import Icon from 'components/ui/icon';
 import LayerToggle from 'components/map/components/legend/components/layer-toggle';
 

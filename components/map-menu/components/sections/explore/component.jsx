@@ -4,10 +4,11 @@ import isEqual from 'lodash/isEqual';
 import { track } from 'analytics';
 import ReactHtmlParser from 'react-html-parser';
 
+import { Loader } from 'gfw-components';
+
 import SubnavMenu from 'components/subnav-menu';
 import Dropdown from 'components/ui/dropdown';
 import Card from 'components/ui/card';
-import Loader from 'components/ui/loader';
 import PTWProvider from 'providers/ptw-provider';
 
 import './styles.scss';

@@ -4,8 +4,9 @@ import cx from 'classnames';
 import Link from 'next/link';
 import { track } from 'analytics';
 
+import { Loader } from 'gfw-components';
+
 import Dropdown from 'components/ui/dropdown';
-import Loader from 'components/ui/loader';
 import Icon from 'components/ui/icon';
 import Button from 'components/ui/button';
 import DynamicSentence from 'components/ui/dynamic-sentence';
@@ -80,7 +81,7 @@ class Header extends PureComponent {
 
     return (
       <div className={cx('c-dashboards-header', className)}>
-        {loading && <Loader className="loader" theme="theme-loader-light" />}
+        {loading && <Loader className="loader" light />}
         {showMetaControls && (
           <div className="share-buttons">
             <Button

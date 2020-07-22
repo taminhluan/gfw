@@ -5,10 +5,11 @@ import { track } from 'analytics';
 import twitterIcon from 'assets/icons/twitter.svg?sprite';
 import facebookIcon from 'assets/icons/facebook.svg?sprite';
 
+import { Loader } from 'gfw-components';
+
 import Switch from 'components/ui/switch';
 import Button from 'components/ui/button';
 import Icon from 'components/ui/icon';
-import Loader from 'components/ui/loader';
 import Modal from '../modal';
 
 import './styles.scss';

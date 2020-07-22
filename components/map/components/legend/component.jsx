@@ -13,7 +13,8 @@ import {
   Icons
 } from 'vizzuality-components';
 
-import Loader from 'components/ui/loader';
+import { Loader } from 'gfw-components';
+
 import NoContent from 'components/ui/no-content';
 import SentenceSelector from 'components/sentence-selector';
 

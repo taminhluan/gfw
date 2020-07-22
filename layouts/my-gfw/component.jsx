@@ -2,7 +2,8 @@ import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import Loader from 'components/ui/loader';
+import { Loader } from 'gfw-components';
+
 import Button from 'components/ui/button';
 import ShareModal from 'components/modals/share';
 import ProfileModal from 'components/modals/profile';

@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import { track } from 'analytics';
 
+import { Loader } from 'gfw-components';
+
 import Button from 'components/ui/button';
-import Loader from 'components/ui/loader';
 import ChoseAnalysis from 'components/analysis/components/chose-analysis';
 import ShowAnalysis from 'components/analysis/components/show-analysis';
 import NoContent from 'components/ui/no-content';

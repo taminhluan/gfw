@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 import { handlePageTrack } from 'analytics';
 
+import { Loader } from 'gfw-components';
+
 import treeImage from 'assets/icons/error.svg?sprite';
 import Search from 'components/ui/search';
 import Button from 'components/ui/button';
-import Loader from 'components/ui/loader';
 import Icon from 'components/ui/icon';
 
 import './styles.scss';

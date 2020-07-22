@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { track } from 'analytics';
 import cx from 'classnames';
 
-import Loader from 'components/ui/loader';
+import { Loader } from 'gfw-components';
 import Icon from 'components/ui/icon';
 
 import closeIcon from 'assets/icons/close.svg?sprite';

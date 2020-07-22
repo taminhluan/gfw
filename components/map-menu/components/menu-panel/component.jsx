@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import startCase from 'lodash/startCase';
 
-import Loader from 'components/ui/loader';
+import { Loader } from 'gfw-components';
+
 import Button from 'components/ui/button';
 import Icon from 'components/ui/icon';
 import closeIcon from 'assets/icons/close.svg?sprite';

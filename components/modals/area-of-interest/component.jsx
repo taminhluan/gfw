@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-import Loader from 'components/ui/loader';
+import { Loader } from 'gfw-components';
+
 import LoginForm from 'components/forms/login';
 import ProfileForm from 'components/forms/profile';
 import AreaOfInterestForm from 'components/forms/area-of-interest';

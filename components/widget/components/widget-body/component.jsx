@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import isEmpty from 'lodash/isEmpty';
 import cx from 'classnames';
 
-import Loader from 'components/ui/loader';
+import { Loader } from 'gfw-components';
+
 import NoContent from 'components/ui/no-content';
 import RefreshButton from 'components/ui/refresh-button';
 import DynamicSentence from 'components/ui/dynamic-sentence';

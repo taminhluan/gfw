@@ -7,9 +7,9 @@ import { track } from 'analytics';
 
 import { Slider } from 'vizzuality-components';
 
+import { Loader } from 'gfw-components';
+
 import Icon from 'components/ui/icon';
-// import Slider from 'components/ui/slider';
-import Loader from 'components/ui/loader';
 import Dropdown from 'components/ui/dropdown';
 import Button from 'components/ui/button';
 import Datepicker from 'components/ui/datepicker';

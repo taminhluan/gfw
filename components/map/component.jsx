@@ -7,9 +7,10 @@ import cx from 'classnames';
 
 import { handleMapLatLonTrack, track } from 'analytics';
 
+import { Loader } from 'gfw-components';
+
 import { Tooltip } from 'react-tippy';
 import Tip from 'components/ui/tip';
-import Loader from 'components/ui/loader';
 import Icon from 'components/ui/icon';
 import Map from 'components/ui/map';
 import PlanetNoticeModal from 'components/modals/planet-notice';
@@ -360,7 +361,7 @@ class MapComponent extends Component {
         {loading && (
           <Loader
             className="map-loader"
-            theme="theme-loader-light"
+            light
             message={loadingMessage}
           />
         )}

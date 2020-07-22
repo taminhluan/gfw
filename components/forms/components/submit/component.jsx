@@ -4,8 +4,9 @@ import cx from 'classnames';
 
 import { empty } from 'components/forms/validations';
 
+import { Loader } from 'gfw-components';
+
 import Button from 'components/ui/button';
-import Loader from 'components/ui/loader';
 import Input from 'components/forms/components/input';
 
 import './styles.scss';

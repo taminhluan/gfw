@@ -4,8 +4,9 @@ import ReactHtmlParser from 'react-html-parser';
 
 import { resendSubscriptionConfirmation } from 'services/subscriptions';
 
+import { Loader } from 'gfw-components';
+
 import Button from 'components/ui/button';
-import Loader from 'components/ui/loader';
 
 import Modal from '../modal';
 
@@ -38,7 +39,7 @@ class ConfirmSubscriptionModal extends PureComponent {
     const { activeArea } = this.props;
 
     if (activeArea && activeArea.subscriptionId) {
-      this.setState({ sendingConfirmation: true, sent: false, faliled: false });
+      this.setState({ sendingConfirmation: true, sent: false, failed: false });
       resendSubscriptionConfirmation(activeArea.subscriptionId)
         .then(() => {
           this.handleSuccessfulResend();
