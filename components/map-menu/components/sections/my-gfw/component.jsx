@@ -8,14 +8,13 @@ import Link from 'next/link';
 
 import { track } from 'analytics';
 
-import { Loader } from 'gfw-components';
+import { Loader, Pill } from 'gfw-components';
 
 import AoICard from 'components/aoi-card';
 import LoginForm from 'components/forms/login';
 import Button from 'components/ui/button';
 import Dropdown from 'components/ui/dropdown';
 import Icon from 'components/ui/icon';
-import Pill from 'components/ui/pill';
 import Paginate from 'components/paginate';
 import ConfirmSubscriptionModal from 'components/modals/confirm-subscription';
 

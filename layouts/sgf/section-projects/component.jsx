@@ -5,10 +5,9 @@ import ProjectsModal from 'pages/sgf/section-projects/section-projects-modal';
 import Card from 'components/ui/card';
 import ItemsList from 'components/items-list';
 import Search from 'components/ui/search';
-import NoContent from 'components/ui/no-content';
 import { Element as ScrollEl } from 'react-scroll';
 
-import { Loader } from 'gfw-components';
+import { Loader, NoContent } from 'gfw-components';
 
 import { Media } from 'utils/responsive';
 
@@ -52,12 +51,12 @@ class SectionProjects extends PureComponent {
               <Media greaterThanOrEqual="lg">
                 <ul className="tags">
                   <li>
-                    <span id="grants" />
+                    <span id="grants" /> 
                     {' '}
                     <p>Grantees</p>
                   </li>
                   <li>
-                    <span id="fellows" />
+                    <span id="fellows" /> 
                     {' '}
                     <p>Fellows</p>
                   </li>

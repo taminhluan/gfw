@@ -6,8 +6,9 @@ import moment from 'moment';
 import { track } from 'analytics';
 import Link from 'next/link';
 
+import { NoContent } from 'gfw-components';
+
 import Icon from 'components/ui/icon';
-import NoContent from 'components/ui/no-content';
 import Button from 'components/ui/button';
 import Widgets from 'components/widgets';
 import DynamicSentence from 'components/ui/dynamic-sentence';

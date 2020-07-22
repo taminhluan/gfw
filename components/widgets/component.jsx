@@ -5,9 +5,8 @@ import isEmpty from 'lodash/isEmpty';
 
 import { track } from 'analytics';
 
-import { Loader } from 'gfw-components';
+import { Loader, NoContent } from 'gfw-components';
 
-import NoContent from 'components/ui/no-content';
 import Widget from 'components/widget';
 
 import './styles.scss';

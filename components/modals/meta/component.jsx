@@ -6,7 +6,8 @@ import moment from 'moment';
 import ReactHtmlParser from 'react-html-parser';
 import { track } from 'analytics';
 
-import NoContent from 'components/ui/no-content';
+import { NoContent } from 'gfw-components';
+
 import Button from 'components/ui/button';
 import Modal from '../modal';
 
@@ -21,7 +22,7 @@ class ModalMeta extends PureComponent {
     tableData: PropTypes.object,
     loading: PropTypes.bool,
     error: PropTypes.bool,
-    locationName: PropTypes.string
+    locationName: PropTypes.string,
   };
 
   componentDidMount() {
@@ -55,9 +56,8 @@ class ModalMeta extends PureComponent {
       map_service,
       learn_more,
       download_data,
-      amazon_link
-    } =
-      metaData || {};
+      amazon_link,
+    } = metaData || {};
 
     const parsedCitation =
       citation &&
@@ -67,39 +67,33 @@ class ModalMeta extends PureComponent {
 
     return (
       <div className="modal-meta-content">
-        {error &&
-          !loading && (
+        {error && !loading && (
           <NoContent message="There was a problem finding this info. Please try again later." />
         )}
-        {!loading &&
-          isEmpty(metaData) &&
-          !error && (
+        {!loading && isEmpty(metaData) && !error && (
           <NoContent message="Sorry, we cannot find what you are looking for." />
         )}
-        {!loading &&
-          !error &&
-          !isEmpty(metaData) && (
+        {!loading && !error && !isEmpty(metaData) && (
           <div>
             <p
               className="subtitle"
-                dangerouslySetInnerHTML={{ __html: subtitle }} // eslint-disable-line
+              dangerouslySetInnerHTML={{ __html: subtitle }} // eslint-disable-line
             />
             <div className="meta-table element-fullwidth">
               {tableData &&
-                  Object.keys(tableData).map(
-                    key =>
-                      (tableData[key] ? (
-                        <div key={key} className="table-row">
-                          <div
-                            className="title-column"
-                            dangerouslySetInnerHTML={{ __html: lowerCase(key) }} // eslint-disable-line
-                          />
-                          <div className="description-column">
-                            {this.parseContent(tableData[key])}
-                          </div>
-                        </div>
-                      ) : null)
-                  )}
+                Object.keys(tableData).map((key) =>
+                  tableData[key] ? (
+                    <div key={key} className="table-row">
+                      <div
+                        className="title-column"
+                        dangerouslySetInnerHTML={{ __html: lowerCase(key) }} // eslint-disable-line
+                      />
+                      <div className="description-column">
+                        {this.parseContent(tableData[key])}
+                      </div>
+                    </div>
+                  ) : null
+                )}
             </div>
             {overview && (
               <div className="overview">
@@ -110,21 +104,19 @@ class ModalMeta extends PureComponent {
             {parsedCitation && (
               <div className="citation">
                 <h5>Citation</h5>
-                <div className="body">
-                  {this.parseContent(parsedCitation)}
-                </div>
+                <div className="body">{this.parseContent(parsedCitation)}</div>
               </div>
             )}
             {(learn_more || download_data || map_service || amazon_link) && (
               <div className="ext-actions">
                 {learn_more && (
                   <Button theme="theme-button-medium" extLink={learn_more}>
-                      LEARN MORE
+                    LEARN MORE
                   </Button>
                 )}
                 {download_data && (
                   <Button theme="theme-button-medium" extLink={download_data}>
-                      DOWNLOAD DATA
+                    DOWNLOAD DATA
                   </Button>
                 )}
                 {(map_service || amazon_link) && (
@@ -132,7 +124,7 @@ class ModalMeta extends PureComponent {
                     theme="theme-button-medium"
                     extLink={map_service || amazon_link}
                   >
-                      OPEN IN ARCGIS
+                    OPEN IN ARCGIS
                   </Button>
                 )}
               </div>
@@ -143,27 +135,25 @@ class ModalMeta extends PureComponent {
     );
   }
 
-  parseContent(html) {
-    return (
-      <div>
-        {ReactHtmlParser(html, {
-          transform: node =>
-            (node.name === 'a' ? (
-              <a
-                key={node.attribs.href}
-                href={node.attribs.href}
-                target="_blank"
-                rel="noopener"
-              >
-                {node.children[0].data}
-              </a>
-            ) : (
-              ''
-            ))
-        })}
-      </div>
-    );
-  }
+  parseContent = (html) => (
+    <div>
+      {ReactHtmlParser(html, {
+        transform: (node) =>
+          node.name === 'a' ? (
+            <a
+              key={node.attribs.href}
+              href={node.attribs.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {node.children[0].data}
+            </a>
+          ) : (
+            ''
+          ),
+      })}
+    </div>
+  );
 
   render() {
     const { metakey, setModalMetaClosed, metaData, loading } = this.props;

@@ -7,13 +7,12 @@ import { track } from 'analytics';
 
 import { Slider } from 'vizzuality-components';
 
-import { Loader } from 'gfw-components';
+import { Loader, NoContent } from 'gfw-components';
 
 import Icon from 'components/ui/icon';
 import Dropdown from 'components/ui/dropdown';
 import Button from 'components/ui/button';
 import Datepicker from 'components/ui/datepicker';
-import NoContent from 'components/ui/no-content';
 import RefreshButton from 'components/ui/refresh-button';
 
 import WEEKS from 'data/weeks.json';

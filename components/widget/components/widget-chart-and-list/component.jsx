@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import { NoContent } from 'gfw-components';
+
 import WidgetComposedChart from 'components/widget/components/widget-composed-chart';
 import WidgetNumberedList from 'components/widget/components/widget-numbered-list';
-import NoContent from 'components/ui/no-content';
 
 import './styles.scss';
 

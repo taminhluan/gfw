@@ -6,13 +6,12 @@ import slice from 'lodash/slice';
 import { deburrUpper } from 'utils/data';
 import Link from 'next/link';
 
+import { NoContent, Pill, Search } from 'gfw-components';
+
 import Icon from 'components/ui/icon';
 import Button from 'components/ui/button';
 import AoICard from 'components/aoi-card';
-import Pill from 'components/ui/pill';
-import NoContent from 'components/ui/no-content';
 import Dropdown from 'components/ui/dropdown';
-import Search from 'components/ui/search';
 import Paginate from 'components/paginate';
 import ConfirmSubscriptionModal from 'components/modals/confirm-subscription';
 
@@ -216,7 +215,7 @@ class AreasTable extends PureComponent {
           <div className="column small-12 medium-3">
             <div className="filter-search">
               <Search
-                theme="theme-search-small"
+                small
                 placeholder="Search"
                 input={search}
                 onChange={(value) =>

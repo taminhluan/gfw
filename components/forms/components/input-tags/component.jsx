@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import { Field } from 'react-final-form';
 import ReactTagsInput from 'react-tagsinput';
 
+import { Pill } from 'gfw-components';
+
 import { composeValidators } from 'components/forms/validations';
 
-import Pill from 'components/ui/pill';
 import FieldWrapper from 'components/forms/components/field-wrapper';
 
 import './styles.scss';
@@ -19,7 +20,7 @@ class Input extends PureComponent {
     validate: PropTypes.array,
     label: PropTypes.string,
     name: PropTypes.string,
-    required: PropTypes.bool
+    required: PropTypes.bool,
   };
 
   render() {
@@ -44,7 +45,7 @@ class Input extends PureComponent {
               {...input}
               value={input.value || []}
               inputProps={{
-                placeholder: placeholder || 'Add a new tag'
+                placeholder: placeholder || 'Add a new tag',
               }}
               renderTag={({ tag, key, onRemove }) => (
                 <Pill
@@ -52,7 +53,7 @@ class Input extends PureComponent {
                   className="input-pill"
                   active
                   label={tag}
-                  onRemove={e => {
+                  onRemove={(e) => {
                     e.preventDefault();
                     onRemove(key);
                   }}

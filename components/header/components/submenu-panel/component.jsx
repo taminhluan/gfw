@@ -5,8 +5,9 @@ import cx from 'classnames';
 import { APP_URL } from 'utils/constants';
 import { Media } from 'utils/responsive';
 
+import { Search } from 'gfw-components';
+
 import Icon from 'components/ui/icon';
-import Search from 'components/ui/search';
 
 import moreIcon from 'assets/icons/more.svg?sprite';
 import myGfwIcon from 'assets/icons/mygfw.svg?sprite';
