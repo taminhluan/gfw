@@ -2,16 +2,16 @@ import React, { PureComponent } from 'react';
 
 import { Carousel } from 'gfw-components';
 
-import img1997 from 'pages/about/section-history/images/1997.jpg?webp';
-import img2002 from 'pages/about/section-history/images/2002.jpg?webp';
-import img2004 from 'pages/about/section-history/images/2004.jpg?webp';
-import img2005 from 'pages/about/section-history/images/2005.jpg?webp';
-import img2014 from 'pages/about/section-history/images/2014.jpg?webp';
-import img2015 from 'pages/about/section-history/images/2015.jpg?webp';
-import img2016 from 'pages/about/section-history/images/2016.jpg?webp';
-import img2017 from 'pages/about/section-history/images/2017.jpg?webp';
-import img2018 from 'pages/about/section-history/images/2018.png?webp';
-import img2019 from 'pages/about/section-history/images/2019.png?webp';
+import img1997 from 'layouts/about/section-history/images/1997.jpg?webp';
+import img2002 from 'layouts/about/section-history/images/2002.jpg?webp';
+import img2004 from 'layouts/about/section-history/images/2004.jpg?webp';
+import img2005 from 'layouts/about/section-history/images/2005.jpg?webp';
+import img2014 from 'layouts/about/section-history/images/2014.jpg?webp';
+import img2015 from 'layouts/about/section-history/images/2015.jpg?webp';
+import img2016 from 'layouts/about/section-history/images/2016.jpg?webp';
+import img2017 from 'layouts/about/section-history/images/2017.jpg?webp';
+import img2018 from 'layouts/about/section-history/images/2018.png?webp';
+import img2019 from 'layouts/about/section-history/images/2019.png?webp';
 
 import './styles.scss';
 

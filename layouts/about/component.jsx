@@ -4,17 +4,17 @@ import Link from 'next/link';
 
 import Cover from 'components/cover';
 import SubnavMenu from 'components/subnav-menu';
-import Projects from 'pages/about/section-projects';
-import Join from 'pages/about/section-join';
+import Projects from 'layouts/about/section-projects';
+import Join from 'layouts/about/section-join';
 import Button from 'components/ui/button';
 import Icon from 'components/ui/icon';
 import ModalVideo from 'components/modals/video';
 
-import HistorySection from 'pages/about/section-history';
-import Impacts from 'pages/about/section-impacts';
-import Partners from 'pages/about/section-partners';
-import How from 'pages/about/section-how';
-import Contact from 'pages/about/section-contact';
+import HistorySection from 'layouts/about/section-history';
+import Impacts from 'layouts/about/section-impacts';
+import Partners from 'layouts/about/section-partners';
+import How from 'layouts/about/section-how';
+import Contact from 'layouts/about/section-contact';
 
 import mailIcon from 'assets/icons/mail.svg?sprite';
 import bgImage from './header-bg.jpg?webp';

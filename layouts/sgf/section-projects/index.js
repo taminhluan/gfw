@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { scroller } from 'react-scroll';
 import reducerRegistry from 'redux/registry';
 
-import * as modalActions from 'pages/sgf/section-projects/section-projects-modal/actions';
+import * as modalActions from 'layouts/sgf/section-projects/section-projects-modal/actions';
 import * as actions from './actions';
 
 import reducers, { initialState } from './reducers';

@@ -22,6 +22,10 @@ const URL = ({
       delete query.token;
     }
 
+    if (query.lang) {
+      delete query.lang;
+    }
+
     const queryParamsSerialized = encodeStateForUrl(
       { ...query, ...queryParams },
       options

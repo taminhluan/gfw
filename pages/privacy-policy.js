@@ -1,5 +1,5 @@
 import Layout from 'layouts/page';
-import PrivacyPolicy from 'pages/privacy';
+import PrivacyPolicy from 'layouts/privacy';
 
 const PrivacyPolicyPage = () => (
   <Layout

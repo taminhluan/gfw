@@ -1,5 +1,5 @@
 import Layout from 'layouts/page';
-import Topics from 'pages/topics';
+import Topics from 'layouts/topics';
 
 const topics = ['biodiversity', 'climate', 'commodities', 'water', 'fires'];
 

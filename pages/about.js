@@ -1,5 +1,5 @@
 import Layout from 'layouts/page';
-import About from 'pages/about';
+import About from 'layouts/about';
 
 const AboutPage = () => (
   <Layout

@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import Globe from 'components/globe';
-import ProjectsModal from 'pages/about/section-projects/section-projects-modal';
+import ProjectsModal from 'layouts/about/section-projects/section-projects-modal';
 import ItemsList from 'components/items-list';
 import Button from 'components/ui/button';
 import Icon from 'components/ui/icon';
@@ -10,7 +10,7 @@ import Icon from 'components/ui/icon';
 import { Media } from 'utils/responsive';
 
 import playIcon from 'assets/icons/play.svg?sprite';
-import growth from 'pages/about/section-projects/images/growth.png?webp';
+import growth from 'layouts/about/section-projects/images/growth.png?webp';
 import './styles.scss';
 
 class SectionProjects extends PureComponent {

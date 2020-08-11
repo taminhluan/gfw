@@ -1,5 +1,5 @@
 import Layout from 'layouts/page';
-import Terms from 'pages/terms';
+import Terms from 'layouts/terms';
 
 const TermsPage = () => (
   <Layout

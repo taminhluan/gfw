@@ -14,7 +14,7 @@ import DatasetsProvider from 'providers/datasets-provider';
 import LatestProvider from 'providers/latest-provider';
 import AreasProvider from 'providers/areas-provider';
 
-import ErrorPage from 'pages/error';
+import ErrorPage from 'layouts/error';
 
 import Widgets from 'components/widgets';
 import Share from 'components/modals/share';

@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import reducerRegistry from 'redux/registry';
 
-import awards0 from 'pages/about/section-impacts/images/awards.png?webp';
-import awards1 from 'pages/about/section-impacts/images/awards1.png?webp';
-import awards2 from 'pages/about/section-impacts/images/awards2.png?webp';
-import awards3 from 'pages/about/section-impacts/images/awards3.png?webp';
+import awards0 from 'layouts/about/section-impacts/images/awards.png?webp';
+import awards1 from 'layouts/about/section-impacts/images/awards1.png?webp';
+import awards2 from 'layouts/about/section-impacts/images/awards2.png?webp';
+import awards3 from 'layouts/about/section-impacts/images/awards3.png?webp';
 
 import Component from './component';
 import * as actions from './actions';

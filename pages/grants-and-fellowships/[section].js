@@ -6,10 +6,10 @@ import useRouter from 'utils/router';
 import { decodeParamsForState } from 'utils/stateToUrl';
 
 import Layout from 'layouts/page';
-import GrantsAndFellowships from 'pages/sgf';
+import GrantsAndFellowships from 'layouts/sgf';
 import SgfUrlProvider from 'providers/sgf-url-provider';
 
-import { setSectionProjectsModalSlug } from 'pages/sgf/section-projects/section-projects-modal/actions';
+import { setSectionProjectsModalSlug } from 'layouts/sgf/section-projects/section-projects-modal/actions';
 
 const pageProps = {
   description:

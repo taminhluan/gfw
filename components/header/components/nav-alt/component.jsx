@@ -2,11 +2,13 @@ import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import OutsideClickHandler from 'react-outside-click-handler';
+import useRouter from 'utils/router';
+import { getLangPathname , getMomentLangCode } from 'utils/lang';
 
 import { Media } from 'utils/responsive';
 import { APP_URL } from 'utils/constants';
 import moment from 'moment';
-import { getMomentLangCode } from 'utils/lang';
+
 
 import Icon from 'components/ui/icon';
 import DropdownMenu from 'components/header/components/dropdown-menu';
@@ -53,6 +55,7 @@ class NavAlt extends PureComponent {
           languages && languages.map((l) => ({ label: l.name, value: l.code })),
       });
     }
+
     moment.locale(getMomentLangCode(this.state.lang));
   }
 
@@ -75,6 +78,17 @@ class NavAlt extends PureComponent {
       this.setState({ lang, showLang: false, showMore: false });
     }
     moment.locale(getMomentLangCode(lang));
+
+    const { pathname, asPath, query, replace } = useRouter();
+
+    const newPath = getLangPathname(
+      pathname,
+      asPath,
+      query?.lang || 'en',
+      lang || 'en'
+    );
+    console.log(newPath);
+    replace(newPath?.pathname, newPath?.as, { shallow: true });
   };
 
   handleCloseSubmenu = () => {

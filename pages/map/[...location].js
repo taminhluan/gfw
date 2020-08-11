@@ -4,10 +4,10 @@ import { useDispatch } from 'react-redux';
 import useRouter from 'utils/router';
 
 import Layout from 'layouts/page';
-import Map from 'pages/map';
+import Map from 'layouts/map';
 
 import { setMapSettings } from 'components/map/actions';
-import { setMainMapSettings } from 'pages/map/actions';
+import { setMainMapSettings } from 'layouts/map/actions';
 import { setMenuSettings } from 'components/map-menu/actions';
 import { setAnalysisSettings } from 'components/analysis/actions';
 import { setModalMetaSettings } from 'components/modals/meta/actions';

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import useRouter from 'utils/router';
 
 import Layout from 'layouts/page';
-import Search from 'pages/search';
+import Search from 'layouts/search';
 import SearchUrlProvider from 'providers/search-url-provider';
 
 import { setAreaOfInterestModalSettings } from 'components/modals/area-of-interest/actions';

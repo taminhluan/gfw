@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import capitalize from 'lodash/capitalize';
 
-import Projects from 'pages/sgf/section-projects';
-import About from 'pages/sgf/section-about';
-import Apply from 'pages/sgf/section-apply';
+import Projects from 'layouts/sgf/section-projects';
+import About from 'layouts/sgf/section-about';
+import Apply from 'layouts/sgf/section-apply';
 
 import Cover from 'components/cover';
 import SubnavMenu from 'components/subnav-menu';

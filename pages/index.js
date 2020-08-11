@@ -1,5 +1,5 @@
 import Layout from 'layouts/page';
-import Home from 'pages/home';
+import Home from 'layouts/home';
 
 const HomePage = () => (
   <Layout

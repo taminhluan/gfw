@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Globe from 'components/globe';
-import ProjectsModal from 'pages/sgf/section-projects/section-projects-modal';
+import ProjectsModal from 'layouts/sgf/section-projects/section-projects-modal';
 import Card from 'components/ui/card';
 import ItemsList from 'components/items-list';
 import Search from 'components/ui/search';

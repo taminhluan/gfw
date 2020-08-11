@@ -1,5 +1,5 @@
 import Layout from 'layouts/page';
-import Subscribe from 'pages/subscribe';
+import Subscribe from 'layouts/subscribe';
 
 const SubscribePage = () => (
   <Layout
