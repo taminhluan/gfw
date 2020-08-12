@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import OutsideClickHandler from 'react-outside-click-handler';
 import useRouter from 'utils/router';
-import { getLangPathname , getMomentLangCode } from 'utils/lang';
+import { getLangPathname, getMomentLangCode } from 'utils/lang';
 
 import { Media } from 'utils/responsive';
 import { APP_URL } from 'utils/constants';
 import moment from 'moment';
-
 
 import Icon from 'components/ui/icon';
 import DropdownMenu from 'components/header/components/dropdown-menu';
@@ -87,6 +86,7 @@ class NavAlt extends PureComponent {
       query?.lang || 'en',
       lang || 'en'
     );
+
     console.log(newPath);
     replace(newPath?.pathname, newPath?.as, { shallow: true });
   };
